@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iBackup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/opt/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body class="container">
+    <div class="row">
+      <h1>iBackup</h1>
+      <h2><em>your iphone images/videos</em></h2>
+    </div>
+    <div class="row">
+      <form method="post" action="/backup/" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="image1">Image</label>
+          <input 
+            type="file" 
+            class="form-control" 
+            id="image1"
+            name="image1"
+            placeholder="Image" 
+          >
+        </div>
+        <button type="submit" blass="btn btn-default">Send</button>
+      </form>
+    </div>
+    <script src="/opt/jquery/jquery.js"></script>
+    <script src="/opt/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
